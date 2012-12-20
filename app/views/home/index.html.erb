@@ -1,0 +1,43 @@
+
+<div class="jumbotron">
+        <h1>SCED</h1>
+        <p class="lead">
+          Todo lo bueno de SCED, etc, etc.
+        </p>
+          <% if not user_signed_in? %>
+          <%= link_to('Login si ya eres usuario registrado', new_user_session_path, { :class => 'btn btn-success btn-large' } )  %>  
+          <% end %>
+
+      </div>
+
+      <hr>
+
+      <div class="row-fluid marketing">
+        <div class="span6">
+          <h4>Feature 1</h4>
+          <p>Details of feature 1</p>
+
+          <h4>Subheading</h4>
+          <p>Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Cras mattis consectetur purus sit amet fermentum.</p>
+
+          <h4>Subheading</h4>
+          <p>Maecenas sed diam eget risus varius blandit sit amet non magna.</p>
+        </div>
+
+        <div class="span6">
+          <h4>Subheading</h4>
+          <p>Donec id elit non mi porta gravida at eget metus. Maecenas faucibus mollis interdum.</p>
+
+          <h4>Subheading</h4>
+          <p>Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Cras mattis consectetur purus sit amet fermentum.</p>
+
+          <h4>Subheading</h4>
+          <p>Maecenas sed diam eget risus varius blandit sit amet non magna.</p>
+        </div>
+      </div>
+
+<p></p>
+
+
+
+

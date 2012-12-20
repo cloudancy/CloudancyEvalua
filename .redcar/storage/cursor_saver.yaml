@@ -1,0 +1,47 @@
+--- 
+cursor_positions: 
+  - :path: app/views/users/_user.html.erb
+    :cursor_offset: 75
+    :timestamp: 2012-11-28 16:47:03 -06:00
+  - :path: app/views/users/edit.html.erb
+    :cursor_offset: 307
+    :timestamp: 2012-11-28 11:38:34 -06:00
+  - :path: Gemfile
+    :cursor_offset: 243
+    :timestamp: 2012-11-28 09:40:24 -06:00
+  - :path: app/assets/stylesheets/application.css.scss
+    :cursor_offset: 558
+    :timestamp: 2012-11-29 10:40:41 -06:00
+  - :path: app/assets/stylesheets/bootstrap.css
+    :cursor_offset: 0
+    :timestamp: 2012-11-26 15:02:14 -06:00
+  - :path: app/assets/stylesheets/bootstrap_and_overrides.css.scss
+    :cursor_offset: 0
+    :timestamp: 2012-11-26 14:35:37 -06:00
+  - :path: app/views/home/index.html.erb
+    :cursor_offset: 415
+    :timestamp: 2012-11-29 12:36:54 -06:00
+  - :path: app/views/layouts/_navigation.html.erb
+    :cursor_offset: 2321
+    :timestamp: 2012-11-29 11:22:15 -06:00
+    :selection_offset: 2347
+    :block_selection_mode: false
+  - :path: app/views/layouts/application.html.erb
+    :cursor_offset: 466
+    :timestamp: 2012-11-29 12:27:00 -06:00
+  - :path: app/controllers/users_controller.rb
+    :cursor_offset: 639
+    :timestamp: 2012-11-28 10:25:40 -06:00
+  - :path: app/views/users/new.html.erb
+    :cursor_offset: 524
+    :timestamp: 2012-11-28 11:38:30 -06:00
+  - :path: app/models/role.rb
+    :cursor_offset: 0
+    :timestamp: 2012-11-26 11:50:01 -06:00
+  - :path: app/models/user.rb
+    :cursor_offset: 300
+    :timestamp: 2012-11-29 12:22:47 -06:00
+  - :path: app/views/users/index.html.erb
+    :cursor_offset: 110
+    :timestamp: 2012-11-29 14:48:54 -06:00
+files_to_retain: 0

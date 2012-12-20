@@ -1,0 +1,17 @@
+<h1>Editar empleado</h1>
+
+
+<%= simple_form_for(@user, :validate => true, :html => {:class => 'form-horizontal' }) do |f| %>
+  <%= f.error_notification %>
+  <%= f.input :name, :autofocus => true, :required => true %> 
+  <%= f.input :lastname, :required => true %>
+  <%= f.input :email, :required => true %>
+
+
+  <%= f.button :submit, 'Aceptar', :class => 'btn-primary' %>
+
+<% end %>
+
+<%= link_to 'Cancelar', users_path %>
+
+

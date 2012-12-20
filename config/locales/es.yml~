@@ -1,0 +1,5 @@
+es:
+  hello: "Hola Mundo"
+  notanadmin: "No es administrador."
+  userdeleted: "Usuario Borrado."
+  candeleteyourself: "No puede borrarse usted mismo."

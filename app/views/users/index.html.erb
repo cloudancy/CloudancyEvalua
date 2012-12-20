@@ -1,0 +1,39 @@
+<h3>Empleados</h3>
+<div class="span12">
+
+ <% if current_user.has_role? :admin %>
+<%= link_to "Agregar Empleado", new_user_path, :class => "btn btn-info pull-right" %>
+<% end %>
+
+<table class="table table-striped table-hover">
+	  <thead>
+      <tr>
+          <th>Nombre de empleado</th>
+          <th>Email</th>
+          <th>Registrado</th>
+          <th>Rol</th>
+          <th></th>
+          <th></th>                                      
+      </tr>
+  </thead>   
+  <tbody>
+  <% @users.each do |user| %>
+    <tr>
+        <td><%= link_to "#{user.name} #{user.lastname}", user %></td>
+        <td><%= user.email %></td>
+        <td><%= user.created_at.to_date %></td>
+        <td><%= user.roles.first.name.titleize unless user.roles.first.nil? %></td>
+        <td>
+          <a data-toggle="modal" href="#role-options-<%= user.id %>" class="btn btn-mini" type="button">Cambiar Rol</a>
+          <%= render user %>
+        </td>
+        <td>
+            <% if current_user.has_role? :admin %>
+            <%= link_to("Borrar empleado", user_path(user), :data => { :confirm => "Está seguro?" }, :method => :delete, :class => 'btn btn-mini') unless user == current_user %>
+            <% end %>
+        </td>                                       
+    </tr>
+  <% end %>
+  </tbody>
+</table>
+</div>

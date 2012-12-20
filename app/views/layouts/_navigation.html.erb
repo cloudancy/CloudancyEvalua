@@ -1,0 +1,62 @@
+<%= link_to "EVALUACIONES", root_path, :class => 'brand' %>
+<ul class="nav">
+<% if user_signed_in? %>
+      <li class="dropdown">
+        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Empleados <b class="caret"></b></a>
+         <ul class="dropdown-menu">
+            <% if current_user.has_role? :admin %>
+            <li> <%= link_to 'Administrar', users_path %> </li>
+            <% end %>
+            
+            <li><a href="#">Metas</a></li>
+            <li><a href="#">Historia de evaluaciones</a></li>
+          </ul>
+      </li>
+      <li class="dropdown">
+        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Evaluaciones<b class="caret"></b></a>
+         <ul class="dropdown-menu">        
+            <li><a href="#">Auto evaluación</a></li>
+            <li class="divider"></li>
+            <li class="nav-header">Supervisados</li>
+            <li><a href="#">Empleado 1</a></li>
+            <li><a href="#">Empleado 2</a></li>
+            <li class="divider"></li>
+            <li class="nav-header">Otros</li>
+            <li><a href="#">Empleado 3</a></li>
+            <li><a href="#">Empleado 4</a></li>            
+          </ul>
+      </li>
+
+<% if current_user.has_role? :admin %>
+      <li class="dropdown">
+        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Compañía <b class="caret"></b></a>
+         <ul class="dropdown-menu">        
+            <li><a href="#">Departamentos</a></li>
+            <li><a href="#">Posiciones</a></li>
+            <li><a href="#">Factores</a></li>
+            <li><a href="#">Configuración de Evaluaciones</a></li>            
+          </ul>
+      </li>
+
+      <li class="dropdown">
+        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Herramientas<b class="caret"></b></a>
+         <ul class="dropdown-menu">        
+            <li><a href="#">Impersonar Empleado</a></li>
+            <li><a href="#">Correos</a></li>            
+            <li class="divider"></li>
+            <li class="nav-header">Reportes</li>
+            <li><a href="#">Evaluaciones completadas</a></li>
+            <li><a href="#">Evaluaciones atrasadas</a></li>            
+            <li><a href="#">Histórico de calificaciones</a></li>            
+          </ul>
+      </li>
+<% end %>      
+<% end %>      
+<li class="pull-right">
+  <% if user_signed_in? %>
+    <%= link_to 'Logout', destroy_user_session_path, :method=>'delete', :class => "pull-right" %>        
+  <% else %>
+    <%= link_to('Login', new_user_session_path)  %>  
+</li>
+  <% end %>
+</ul>
